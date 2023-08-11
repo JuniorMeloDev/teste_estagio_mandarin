@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manda Trends</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding-top: 50px;
+            border-left: 20px solid lightblue;
+            border-right: 20px solid lightblue;
+            border-bottom: 30px solid lightblue;
+        }
+
+        header {
+            background-color: rgb(244, 238, 238);
+            height: 160px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .imagens_header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 710px) {
+            header {
+                justify-content: center;
+              
+            }
+            .imagens_header {
+                display: none;
+            }            
+            .lista {
+               display: none;
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin-right: 30px;
+            padding-bottom: 10px;
+        }
+
+        .lista {
+            margin-top: 40px;
+            font-size: 12pt;
+            color: white;
+            text-align: end;
+        }
+
+        .post_principal {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .post_principal img {
+            width: 100%;  
+        }
+
+        @media screen and (min-width: 1026px) {
+            .post_principal img {
+                height: 360px;
+            }          
+        }
+        
+        .texto_post {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .texto_post a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .fonte_noticia {
+            margin-top: 10px;
+            font-style: italic;
+            opacity: 0.5;
+        }
+
+        .linha_colorida {
+            margin-top: 10px;
+            background-color: darkmagenta;
+            width: 280px;
+            height: 5px;
+        }
+
+        span {
+            font-size: 10pt;
+        }
+
+        .noticias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .noticias img {
+            padding-top: 40px;
+            height: 305px;
+            width: 100%;
+        }
+
+        .noticias p {
+            font-size: 20pt;
+            font-weight: bold;
+        }
+
+        .noticias a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .noticias span {
+            padding-top: 20px;
+        }
+
+        .linha_colorida_basket {
+            margin-top: 10px;
+            background-color: rgb(117, 88, 117);
+            width: 200px;
+            height: 5px;
+        }
+
+        .linha_colorida_whatsapp {
+            margin-top: 10px;
+            background-color: rgb(219, 207, 219);
+            width: 200px;
+            height: 5px;
+        }
+
+        .mandarin {
+            background-color: orangered;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rodape {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="06_MANDA_TRENDS/logo_manda.png" alt="logo">
+        <div class="imagens_header">
+        <img src="06_MANDA_TRENDS/pontos2.png" alt="pontos" style="margin-top: 200px;" width="80px">
+        <img src="06_MANDA_TRENDS/seta.png" alt="seta" style="margin-bottom: 100px;">
+        <img src="06_MANDA_TRENDS/mulher2.png" alt="mulher falando" style="margin-top: 140px;">
+    </div>
+        <div class="lista">
+            <img src="06_MANDA_TRENDS/triangulo.png" alt="triangulo" width="35px" style="margin-top: 15px;">
+            <ul>
+                <li>NRF 2020,</li>
+                <li>Kobe Bryant e</li>
+                <li>WhatsApp Payment</li>
+                <br>
+                <li style="font-size: 14px;">edição 06</li>
+                <img src="06_MANDA_TRENDS/ondaCorrigida.png" alt="onda" width="100px" style="margin-bottom: 50px;">
+            </ul>
+        </div>
+    </header>
+    <main class="post_principal">
+        <a href="06_MANDA_TRENDS/NRF.png">
+            <img src="06_MANDA_TRENDS/NRF.png" alt="NRF 2020">
+        </a>
+        <div class="texto_post">
+            <a href="06_MANDA_TRENDS/NRF.png">
+                <h1>NFR 2020: conheça os top 5 assuntos do evento.</h1>
+            </a>
+            <p>O maior evento sobre varejo do mundo mostrando as tendências,
+                oportunidades e <br> inovações para o setor.
+            </p>
+            <span class="fonte_noticia">Fonte: CMO ADOBE</span>
+            <div class="linha_colorida"></div>
+        </div>
+    </main>
+    <div class="noticias">
+        <div>
+            <a href="06_MANDA_TRENDS/basketBall.png">
+                <img src="06_MANDA_TRENDS/basketBall.png" alt="NBA">
+                <p>Petição para colocar Kobe <br> Bryant no logo da NBA.</p>
+            </a>
+            <br>
+            <span class="fonte_noticia">Fonte: Daily Mail</span>
+
+            <div class="linha_colorida_basket"></div>
+        </div>
+        <div>
+            <a href="06_MANDA_TRENDS/WhatsApp.png">
+                <img src="06_MANDA_TRENDS/WhatsApp.png" alt="logo whatsapp">
+                <p>WhatsApp terá função de<br>pagamentos em 2020.</p>
+            </a>
+            <br>
+            <span class="fonte_noticia">Fonte: Proxxima</span>
+            <div class="linha_colorida_whatsapp"></div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="mandarin">
+        <img src="06_MANDA_TRENDS/mandarin2.png" alt="rodapé mandarin">
+    </div>
+    <footer>
+        <div class="rodape">
+            <p>Copyright &#174; Mandarin. Todos os direitos reservados.</p>
+            <p>Caso não deseje mais receber nossos emails, por favor
+                 <a href="">clique aqui.</a></p>
+        </div>
+    </footer>
+</body>
+</html>
