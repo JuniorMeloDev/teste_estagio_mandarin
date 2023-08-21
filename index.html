@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,17 +13,18 @@
         }
 
         body {
-            padding-top: 50px;
-            border-left: 20px solid lightblue;
-            border-right: 20px solid lightblue;
-            border-bottom: 30px solid lightblue;
+            padding-top: 30px;
+            border-left: 20px solid #f2f2f2;
+            border-right: 20px solid #f2f2f2;
+            border-bottom: 20px solid #f2f2f2;
         }
 
         header {
-            background-color: rgb(244, 238, 238);
-            height: 160px;
+            background-image: linear-gradient(135deg, #e94929 0%, #e72357 100%);
+
+            height: 139px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
         }
 
@@ -31,32 +32,39 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
         }
 
         @media screen and (max-width: 710px) {
-            header {
-                justify-content: center;
-              
+            header img {
+                width: 130px;
             }
-            .imagens_header {
-                display: none;
-            }            
-            .lista {
-               display: none;
-            }
-        }
 
-        ul {
-            list-style: none;
-            margin-right: 30px;
-            padding-bottom: 10px;
+            .imagens_header {
+                width: 20px;
+            }
+
+            .lista {
+                width: 140px;
+                height: 150px;
+                margin-bottom: 300px;
+                font-size: 6px;
+            }
+
+            .pontos {
+                width: 50px;
+                margin-bottom: 40px;
+            }
         }
 
         .lista {
             margin-top: 40px;
-            font-size: 12pt;
-            color: white;
-            text-align: end;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 16px;
+            color: #ffffff;
+            font-family: "Arial";
+            text-align: right;
         }
 
         .post_principal {
@@ -68,25 +76,43 @@
         }
 
         .post_principal img {
-            width: 100%;  
+            width: 100%;
         }
 
-        @media screen and (min-width: 1026px) {
-            .post_principal img {
-                height: 360px;
-            }          
-        }
-        
         .texto_post {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
+        }
+
+        .texto_post h1 {
+            font-size: 23px;
+            letter-spacing: -1px;
+            line-height: 25px;
+            color: #231f20;
+            font-weight: bold;
+            font-family: "Arial";
+        }
+
+        .texto_post p {
+            font-size: 13px;
+            letter-spacing: 0px;
+            line-height: 17px;
+            color: #74787a;
+            font-family: "Arial";
+        }
+
+        @media screen and (max-width: 530px) {
+            .texto_post p {
+                font-size: 12px;
+            }
+
         }
 
         .texto_post a {
             text-decoration: none;
             color: black;
-
         }
 
         .fonte_noticia {
@@ -103,12 +129,12 @@
         }
 
         span {
-            font-size: 10pt;
+            font-size: 11px;
+            font-family: Arial;
         }
 
         .noticias {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap: 20px;
@@ -120,9 +146,25 @@
             width: 100%;
         }
 
+        @media screen and (max-width:500px) {
+            .noticias img {
+                height: 220px;
+            }
+        }
+
         .noticias p {
-            font-size: 20pt;
+            font-size: 18px;
+            letter-spacing: 0px;
+            line-height: 22px;
+            color: #231f20;
             font-weight: bold;
+            font-family: "Arial";
+        }
+
+        @media screen and (max-width:530px) {
+            .noticias p {
+                font-size: 16px;
+            }
         }
 
         .noticias a {
@@ -131,12 +173,17 @@
         }
 
         .noticias span {
-            padding-top: 20px;
+            font-size: 11px;
+            letter-spacing: 0px;
+            line-height: 17px;
+            color: #b2b2b2;
+            font-style: italic;
+            font-family: "Arial";
         }
 
         .linha_colorida_basket {
             margin-top: 10px;
-            background-color: rgb(117, 88, 117);
+            background-color: rgb(172, 133, 172);
             width: 200px;
             height: 5px;
         }
@@ -149,7 +196,7 @@
         }
 
         .mandarin {
-            background-color: orangered;
+            background-color: #fc4c02;
             height: 150px;
             display: flex;
             align-items: center;
@@ -159,48 +206,50 @@
         .rodape {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             padding-top: 20px;
-            justify-content: center;
-            align-items: center;
-            background-color: lightblue;
+            background-color: #f2f2f2;
             text-align: center;
+            font-size: 11px;
+            color: #646869;
+            font-family: "Arial";
         }
     </style>
 </head>
+
 <body>
+
     <header>
-        <img src="06_MANDA_TRENDS/logo_manda.png" alt="logo">
+        <img src="06_MANDA_TRENDS/logo_branco.png" alt="logo">
         <div class="imagens_header">
-        <img src="06_MANDA_TRENDS/pontos2.png" alt="pontos" style="margin-top: 200px;" width="80px">
-        <img src="06_MANDA_TRENDS/seta.png" alt="seta" style="margin-bottom: 100px;">
-        <img src="06_MANDA_TRENDS/mulher2.png" alt="mulher falando" style="margin-top: 140px;">
-    </div>
+            <img class="pontos" src="06_MANDA_TRENDS/pontos2.png" alt="pontos" style="margin-top: 200px;" width="80px">
+            <img src="06_MANDA_TRENDS/mulherFalando.png" alt="mulher falando" style="margin-top: 140px;">
+        </div>
         <div class="lista">
-            <img src="06_MANDA_TRENDS/triangulo.png" alt="triangulo" width="35px" style="margin-top: 15px;">
-            <ul>
-                <li>NRF 2020,</li>
-                <li>Kobe Bryant e</li>
-                <li>WhatsApp Payment</li>
-                <br>
-                <li style="font-size: 14px;">edição 06</li>
-                <img src="06_MANDA_TRENDS/ondaCorrigida.png" alt="onda" width="100px" style="margin-bottom: 50px;">
-            </ul>
+            <img src="06_MANDA_TRENDS/triangulo.png" alt="triangulo" width="25px" style="margin-top: 25px;">
+            <p>NRF 2020,</p>
+            <p>Kobe Bryant e</p>
+            <p>WhatsApp Payment</p>
+            <br>
+            <p>edição 06</p>
+            <img src="06_MANDA_TRENDS/onda.png" alt="onda" style="margin-bottom: 60px;">
+
         </div>
     </header>
     <main class="post_principal">
-        <a href="06_MANDA_TRENDS/NRF.png">
-            <img src="06_MANDA_TRENDS/NRF.png" alt="NRF 2020">
-        </a>
-        <div class="texto_post">
+        <div>
             <a href="06_MANDA_TRENDS/NRF.png">
-                <h1>NFR 2020: conheça os top 5 assuntos do evento.</h1>
+                <img src="06_MANDA_TRENDS/NRF.png" alt="NRF 2020">
             </a>
-            <p>O maior evento sobre varejo do mundo mostrando as tendências,
-                oportunidades e <br> inovações para o setor.
-            </p>
-            <span class="fonte_noticia">Fonte: CMO ADOBE</span>
-            <div class="linha_colorida"></div>
+            <div class="texto_post">
+                <a href="06_MANDA_TRENDS/NRF.png">
+                    <h1>NFR 2020: conheça os top 5 assuntos do evento.</h1>
+                </a>
+                <p>O maior evento sobre varejo do mundo mostrando as tendências,
+                    oportunidades e <br> inovações para o setor.
+                </p>
+                <span class="fonte_noticia">Fonte: CMO ADOBE</span>
+                <div class="linha_colorida"></div>
+            </div>
         </div>
     </main>
     <div class="noticias">
@@ -224,17 +273,20 @@
             <div class="linha_colorida_whatsapp"></div>
         </div>
     </div>
-    </div>
+
     <br>
     <div class="mandarin">
         <img src="06_MANDA_TRENDS/mandarin2.png" alt="rodapé mandarin">
+    </div>
     </div>
     <footer>
         <div class="rodape">
             <p>Copyright &#174; Mandarin. Todos os direitos reservados.</p>
             <p>Caso não deseje mais receber nossos emails, por favor
-                 <a href="">clique aqui.</a></p>
+                <a href="">clique aqui.</a>
+            </p>
         </div>
     </footer>
 </body>
+
 </html>
